@@ -1,0 +1,1 @@
+df.resample("Q").agg(['sum', 'mean', 'median'])

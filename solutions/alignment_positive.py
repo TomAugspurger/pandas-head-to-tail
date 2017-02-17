@@ -1,0 +1,1 @@
+(pct_change > 0).mean()

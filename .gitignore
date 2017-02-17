@@ -1,0 +1,6 @@
+*.md
+*.pdf
+*_files/
+__pycache__/
+!README.md
+*.ipynb_checkpoints/

@@ -1,0 +1,1 @@
+sns.factorplot('age', 'class', data=t);

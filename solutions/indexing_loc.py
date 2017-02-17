@@ -1,0 +1,1 @@
+first.loc['US':, ['tail_num', 'origin', 'dest']]

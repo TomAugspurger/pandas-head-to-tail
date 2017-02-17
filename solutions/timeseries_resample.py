@@ -1,0 +1,1 @@
+df.resample("W").std().plot();

@@ -1,0 +1,26 @@
+name: ph2t
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6.0
+  - numpy=1.11.3
+  - pandas=0.19.2
+  - matplotlib=2.0.0
+  - seaborn=0.7.1
+  - ipython=5.1.0
+  - jupyter=1.0.0
+  - notebook=4.3.1
+  - dask=0.13.0
+  - toolz=0.8.2
+  - pandas-datareader=0.2.1
+  - scikit-learn=0.18
+  - scipy=0.18.1
+  - statsmodels=0.8.0
+  - pysal=1.13.0
+  - cartopy=0.14.3
+  - xlrd
+  - palettable
+  - pip:
+    - lifetimes==0.6.0.0
+    - altair

@@ -1,0 +1,1 @@
+pd.concat([gdp, cpi], axis='columns')

@@ -1,0 +1,1 @@
+(df.home_rest - df.away_rest).mean()

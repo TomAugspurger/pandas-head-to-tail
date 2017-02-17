@@ -1,0 +1,1 @@
+flights.loc[flights.cancelled == 1]
