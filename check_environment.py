@@ -13,5 +13,10 @@ else:
     if len(bad) > 0:
         print('\n'.join(bad))
     else:
-        print("All good. Enjoy the tutorial!")
-
+        try:
+            import pandas as pd
+            df = pd.read_csv("data/cpi.csv")
+            print("All good. Enjoy the tutorial!")
+        except Exception as e:
+            print("Couldn't read CPI")
+            print(e)
