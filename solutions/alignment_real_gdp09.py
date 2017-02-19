@@ -1,2 +1,2 @@
-cpi09 = cpi.loc['2009'].mean()
+cpi09 = cpi / cpi.loc['2009'].mean()
 gdp / cpi09
