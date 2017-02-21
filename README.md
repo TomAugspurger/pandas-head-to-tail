@@ -5,8 +5,8 @@ Materials for my [O'Reilly Live Online Training course](https://www.safaribookso
 ## First-Time Setup
 
 1. [Install Miniconda for your platform](https://conda.io/miniconda.html) ([instructions](https://conda.io/docs/install/quick.html))
-  + If you already have conda, you can skip this step; It's also fine to use virtualenv + pip,
-    just make sure to install all the python packages in `environment.yml`
+  + If you already have conda, you can skip this step; It's also fine to use virtualenv + pip.
+  You should be able to `pip install -r requirements.txt` to get the same package versions as step 4.
   + Make sure to open a new terminal shell after installing, so that `conda` is on your path
 2. Clone the repository at https://github.com/tomaugspurger/pandas-head-to-tail
   - `git clone https://github.com/tomaugspurger/pandas-head-to-tail`
