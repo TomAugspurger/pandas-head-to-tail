@@ -10,6 +10,7 @@ Materials for my [O'Reilly Live Online Training course](https://www.safaribookso
   + Make sure to open a new terminal shell after installing, so that `conda` is on your path
 2. Clone the repository at https://github.com/tomaugspurger/pandas-head-to-tail
   - `git clone https://github.com/tomaugspurger/pandas-head-to-tail`
+  - If you don't have git installed, you can download the zip using the green "Clone or download" button, and then "Download ZIP". Note that the filename will be "pandas-head-to-tail-master"
 3. Change into the repository
   - `cd pandas-head-to-tail`
 4. Create the conda environment
