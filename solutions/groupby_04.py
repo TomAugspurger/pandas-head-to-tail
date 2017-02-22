@@ -1,2 +1,2 @@
-pas = df[df.beer_name.str.lower().str.contains("pale ale")]
+pas = df[df.beer_style.str.lower().str.contains("pale ale")]
 pas.head()
