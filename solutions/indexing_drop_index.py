@@ -1,0 +1,1 @@
+first.drop(['EV', 'F9'])

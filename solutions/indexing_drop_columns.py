@@ -1,0 +1,1 @@
+flights.drop('airline_id', axis='columns')
