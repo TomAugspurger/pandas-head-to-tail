@@ -1,0 +1,1 @@
+yearly.loc[[70, 75, 80, 82], ['horsepower', 'weight']]
