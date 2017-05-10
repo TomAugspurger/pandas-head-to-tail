@@ -30,9 +30,11 @@ class HeaderExporter(MarkdownExporter):
 
 
 def exercise(src):
+    # import pdb; pdb.set_trace()
     d, p, *_ = html.fragments_fromstring(src)
 
-    title = d.attrib['data-title']
+    # title = d.attrib['data-title']
+    title = d.find('h1').text_content().strip().replace("Exercise: ", "")
     question = convert_text(p.text, "latex", format="markdown")
     tpl = dedent('''\
 
