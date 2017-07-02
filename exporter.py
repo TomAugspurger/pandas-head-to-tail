@@ -53,7 +53,8 @@ def convert(notebook):
     exporter = HeaderExporter()
     exporter.environment.filters['exercise'] = exercise
     body, resc = exporter.from_notebook_node(nb)
-    with open(notebook.with_suffix(".md"), 'w') as f:
+    out = Path("markdown").joinpath(notebook.with_suffix(".md").name)
+    with open(out, 'w') as f:
         f.write(body)
 
 

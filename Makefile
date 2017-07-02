@@ -1,16 +1,16 @@
-SRC  = $(wildcard *.ipynb)
-MDS  = $(SRC:.ipynb=.md)
-PDFS = $(SRC:.ipynb=.pdf)
+SRC  = $(wildcard notebooks/*.ipynb)
+MDS  = $(patsubst notebooks/%.ipynb, markdown/%.md, $(SRC))
+PDFS = $(patsubst markdown/%.md, markdown/%.pdf, $(MDS))
 
 all:	$(PDFS)
 
 pdf:	clean $(PDFS)
 html:	clean $(HTML)
 
-%.md: %.ipynb
+markdown/%.md: notebooks/%.ipynb
 	python exporter.py $<
 
-%.pdf: %.md
+pdfs/%.pdf: markdown/%.md
 	pandoc -t beamer --slide-level 2 --template=default.beamer -o $@ $< --metadata="theme:metropolis"
 
 clean:
@@ -18,13 +18,13 @@ clean:
 
 slides.pdf: $(MDS)
 	pandoc metadata.yaml \
-		00-README.md \
-		01-Indexing.md \
-		02-Alignment.md \
-		03-Iterators-Groupby.md \
-		04-Visualization.md \
-		05-Tidy-Data.md \
-		06-Performance.md \
-		07-Timeseries.md \
-		08-Pandas-NumPy-ScikitLearn.md \
+		markdown/00-README.md \
+		markdown/01-Indexing.md \
+		markdown/02-Alignment.md \
+		markdown/03-Iterators-Groupby.md \
+		markdown/04-Visualization.md \
+		markdown/05-Tidy-Data.md \
+		markdown/06-Performance.md \
+		markdown/07-Timeseries.md \
+		markdown/08-Pandas-NumPy-ScikitLearn.md \
 		-t beamer --slide-level 2 --latex-engine=xelatex -V theme:metropolis -o $@

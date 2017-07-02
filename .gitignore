@@ -4,5 +4,5 @@
 __pycache__/
 !README.md
 *.ipynb_checkpoints/
-data/beer/*.gz
+notebooks/data/beer/*.gz
 *.DS_Store

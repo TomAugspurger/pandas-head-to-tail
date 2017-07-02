@@ -24,4 +24,4 @@ Materials for my [O'Reilly Live Online Training course](https://www.safaribookso
 ## Notebooks
 
 Once your notebook server is running, (`jupyter notebook`) your browser should open up to the webpage (`http://localhost:8888` by default).
-Open the notebook `00-README.ipynb` and familiarize yourself with using notebook.
+Open the notebook `notebooks/00-README.ipynb` and familiarize yourself with using notebook.
