@@ -15,7 +15,7 @@ else:
     else:
         try:
             import pandas as pd
-            df = pd.read_csv("data/cpi.csv")
+            df = pd.read_csv("notebooks/data/cpi.csv")
             print("All good. Enjoy the tutorial!")
         except Exception as e:
             print("Couldn't read CPI")
