@@ -1,27 +1,63 @@
-# Pandas .head() to .tail()
+# SciPy 2018 Tutorial: Pandas .head() to .tail()
 
-Materials for my [O'Reilly Live Online Training course](https://www.safaribooksonline.com/live-training/)
+#### Presented by:
+- [Tom Augspurger](https://tomaugspurger.github.io/), [Anaconda, Inc.](https://anaconda.org/)
+- [Joris Van den Bossche](https://jorisvandenbossche.github.io/), [Université Paris-Saclay Center for Data Science](https://www.datascience-paris-saclay.fr/)
+- [Dillon Niederhut](https://dillon.niederhut.us), [Enthought Inc.](https://www.enthought.com)
+
 
 ## First-Time Setup
 
-1. [Install Miniconda for your platform](https://conda.io/miniconda.html) ([instructions](https://conda.io/docs/install/quick.html))
-  + If you already have conda, you can skip this step; It's also fine to use virtualenv + pip.
-  You should be able to `pip install -r requirements.txt` to get the same package versions as step 4.
-  + Make sure to open a new terminal shell after installing, so that `conda` is on your path
-2. Clone the repository at https://github.com/tomaugspurger/pandas-head-to-tail
-  - `git clone https://github.com/tomaugspurger/pandas-head-to-tail`
-  - If you don't have git installed, you can download the zip using the green "Clone or download" button, and then "Download ZIP". Note that the filename will be "pandas-head-to-tail-master"
-3. Change into the repository
-  - `cd pandas-head-to-tail`
-4. Create the conda environment
-  - `conda env create`
-5. Activate the environment
-  - `source activate ph2t` on Linux or MacOS
-  - `activate ph2t` on Windows
-6. Start the Jupyter notebook server
-  - `jupyter notebook`
+#### 1. Install Python
 
-## Notebooks
+If you don't already have a working python distribution, you may download
+Enthought Canopy ([https://store.enthought.com/](https://store.enthought.com/),
+Anaconda Python ([https://continuum.io/downloads](https://continuum.io/downloads)),
+or Python.org  ([https://www.python.org/downloads/](https://www.python.org/downloads/)).
 
-Once your notebook server is running, (`jupyter notebook`) your browser should open up to the webpage (`http://localhost:8888` by default).
-Open the notebook `notebooks/00-README.ipynb` and familiarize yourself with using notebook.
+#### 2. Download Tutorial Materials
+
+This GitHub repository is all that is needed in terms of tutorial content. The simplest solution is to download the material using this link:
+
+[https://github.com/deniederhut/Pandas-Tutorial-SciPyConf-2018/archive/master.zip](https://github.com/deniederhut/Pandas-Tutorial-SciPyConf-2018/archive/master.zip)
+
+If you're familiar with Git, you can also clone this repository with:
+
+```sh
+$ git clone git@github.com:deniederhut/Pandas-Tutorial-SciPyConf-2018.git
+```
+
+It will create a new folder named Pandas-Tutorial-SciPyConf-2018/ with all the
+content you will need, including:
+
+- `requirements.txt` - the package requirements for this tutorial
+- `check_environment.py` - a script for testing your installation
+- `notebooks/` - the Jupyter notebooks we'll use during the tutoral
+
+#### 3. Install Required Packages
+
+With Canopy, the required packages are already installed.
+
+If you are using Anaconda, you can install the necessary packages by opening a terminal and entering the following:
+
+```sh
+conda install --file requirements.txt
+```
+
+If you are using Python from python.org or your system, you can install the necessary packages by opening a terminal and entering the following:
+
+```sh
+pip install -U -r requirements.txt
+```
+
+#### 4. Test the Installation
+
+To make sure everything was installed correctly, open a terminal, and change its directory (`cd`) so that your working directory is `Pandas-Tutorial-SciPyConf-2018`. The enter the following:
+
+```sh
+python check_environment.py
+```
+
+## Questions? Problems?
+
+You may post messages to the slack channel for this tutorial at: [https://scipy2018.slack.com](https://scipy2018.slack.com)
