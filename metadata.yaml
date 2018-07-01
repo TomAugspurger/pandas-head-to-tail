@@ -1,6 +1,0 @@
----
-title: Pandas `.head() to .tail()`
-author: Tom Augspurger
-header-includes:
-    - \usepackage{exercise}
----
